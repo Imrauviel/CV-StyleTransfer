@@ -5,6 +5,6 @@ setup(
     packages=find_packages(),
     version='0.1.0',
     description='short',
-    author='Kajetan Kubik',
+    author='Kajetan Kubik & Bartosz Maślanka',
     license='',
 )
