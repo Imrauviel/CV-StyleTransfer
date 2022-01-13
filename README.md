@@ -1,7 +1,9 @@
 CV - style transfer
 ==============================
 
-short
+https://towardsdatascience.com/style-transfer-with-gans-on-hd-images-88e8efcf3716
+https://github.com/maciej3031/comixify
+https://www.kaggle.com/momincks/paintings-for-artistic-style-transfer?select=Edvard+Munch+-+The+Scream.jpg
 
 Project Organization
 ------------
