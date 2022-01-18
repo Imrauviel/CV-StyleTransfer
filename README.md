@@ -5,6 +5,13 @@ https://towardsdatascience.com/style-transfer-with-gans-on-hd-images-88e8efcf371
 https://github.com/maciej3031/comixify
 https://www.kaggle.com/momincks/paintings-for-artistic-style-transfer?select=Edvard+Munch+-+The+Scream.jpg
 
+https://github.com/akanimax/msg-stylegan-tf
+https://github.com/justinpinkney/toonify/blob/master/toonify-yourself.ipynb
+https://github.com/justinpinkney/awesome-pretrained-stylegan2#faces-FFHQ-slim-256x256
+https://github.com/matthias-wright/flaxmodels
+https://github.com/matthias-wright/flaxmodels/blob/main/flaxmodels/stylegan2/stylegan2_demo.ipynb
+https://github.com/justinpinkney/toonify/blob/master/StyleGAN-blending-example.ipynb
+
 Project Organization
 ------------
 
