@@ -5,6 +5,26 @@ https://towardsdatascience.com/style-transfer-with-gans-on-hd-images-88e8efcf371
 https://github.com/maciej3031/comixify
 https://www.kaggle.com/momincks/paintings-for-artistic-style-transfer?select=Edvard+Munch+-+The+Scream.jpg
 
+https://github.com/akanimax/msg-stylegan-tf
+
+https://github.com/justinpinkney/toonify/blob/master/toonify-yourself.ipynb
+
+https://github.com/justinpinkney/awesome-pretrained-stylegan2#faces-FFHQ-slim-256x256
+
+https://github.com/matthias-wright/flaxmodels
+
+https://github.com/matthias-wright/flaxmodels/blob/main/flaxmodels/stylegan2/stylegan2_demo.ipynb
+
+https://github.com/justinpinkney/toonify/blob/master/StyleGAN-blending-example.ipynb
+
+https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123670171.pdf
+
+https://openaccess.thecvf.com/content_ICCV_2019/papers/Abdal_Image2StyleGAN_How_to_Embed_Images_Into_the_StyleGAN_Latent_Space_ICCV_2019_paper.pdf
+
+https://medium.com/swlh/hairstyle-transfer-semantic-editing-gan-latent-code-b3a6ccf91e82
+
+https://github.com/woctezuma/stylegan2-projecting-images
+
 Project Organization
 ------------
 
