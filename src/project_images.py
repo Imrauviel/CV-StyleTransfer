@@ -100,35 +100,4 @@ def project_images(src_dir, dst_dir,
     for src_file in src_files:
         project_image(proj, src_file, dst_dir, None, video=False)
 
-    # src_files = sorted([os.path.join(args.src_dir, f) for f in os.listdir(args.src_dir) if f[0] not in '._'])
-    # for src_file in src_files:
-    #     project_image(proj, src_file, args.dst_dir, args.tmp_dir, video=args.video)
-    #     if args.video:
-    #         render_video(
-    #             src_file, args.dst_dir, args.tmp_dir, args.num_steps, args.video_mode,
-    #             args.video_size, args.video_fps, args.video_codec, args.video_bitrate
-    #         )
-    #     shutil.rmtree(args.tmp_dir)
 
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Project real-world images into StyleGAN2 latent space')
-parser.add_argument('src_dir', help='Directory with aligned images for projection')
-parser.add_argument('dst_dir', help='Output directory')
-parser.add_argument('--tmp-dir', default='.stylegan2-tmp', help='Temporary directory for tfrecords and video frames')
-parser.add_argument('--network-pkl', default='http://d36zk2xti64re0.cloudfront.net/stylegan2/networks/stylegan2-ffhq-config-f.pkl', help='StyleGAN2 network pickle filename')
-parser.add_argument('--vgg16-pkl', default='http://d36zk2xti64re0.cloudfront.net/stylegan1/networks/metrics/vgg16_zhang_perceptual.pkl', help='VGG16 network pickle filename')
-parser.add_argument('--num-steps', type=int, default=1000, help='Number of optimization steps')
-parser.add_argument('--initial-learning-rate', type=float, default=0.1, help='Initial learning rate')
-parser.add_argument('--initial-noise-factor', type=float, default=0.05, help='Initial noise factor')
-parser.add_argument('--verbose', type=bool, default=False, help='Verbose output')
-parser.add_argument('--video', type=bool, default=False, help='Render video of the optimization process')
-parser.add_argument('--video-mode', type=int, default=1, help='Video mode: 1 for optimization only, 2 for source + optimization')
-parser.add_argument('--video-size', type=int, default=1024, help='Video size (height in px)')
-parser.add_argument('--video-fps', type=int, default=25, help='Video framerate')
-parser.add_argument('--video-codec', default='libx264', help='Video codec')
-parser.add_argument('--video-bitrate', default='5M', help='Video bitrate')
-args = parser.parse_args()
-
-project_images(args.src_dir, args.dst_dir, args.network_pkl, args.vgg16_pkl, args.num_steps, args.initial_learning_rate,
-               args.initial_noise_factor, args.verbose)

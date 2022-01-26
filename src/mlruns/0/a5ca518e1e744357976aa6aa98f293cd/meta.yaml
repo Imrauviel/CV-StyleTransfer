@@ -1,0 +1,15 @@
+artifact_uri: file:///content/CV-StyleTransfer/src/mlruns/0/a5ca518e1e744357976aa6aa98f293cd/artifacts
+end_time: 1643203529095
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: a5ca518e1e744357976aa6aa98f293cd
+run_uuid: a5ca518e1e744357976aa6aa98f293cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1643203385581
+status: 3
+tags: []
+user_id: root
