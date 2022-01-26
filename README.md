@@ -66,9 +66,33 @@ Why bother? Beacuse if image does not reminds face, our method is useless.
 
 # Examples of Style Transfers 2.0
 
+<p float="left">
+  <img src="reports/figures/quantin.png" alt="drawing" width="256"/>
+  <img src="reports/figures/example20.jpg" alt="drawing" width="256"/>
+  <img src="reports/figures/example10.jpg" alt="drawing" width="256"/>
+</p>
 
+<p float="left">
+  <img src="reports/figures/musk.png" alt="drawing" width="256"/>
+  <img src="reports/figures/example31.jpg" alt="drawing" width="256"/>
+  <img src="reports/figures/example41.jpg" alt="drawing" width="256"/>
+</p>
+
+<p float="left">
+  <img src="reports/figures/babeczka.png" alt="drawing" width="256"/>  
+  <img src="reports/figures/example12.jpg" alt="drawing" width="256"/>
+  <img src="reports/figures/example42.jpg" alt="drawing" width="256"/>
+</p>
 
 # Examples of 'normal' Style Transfers
+
+# Future work
+
+Technily speaking it was posibilty makes interlace or join 3 models:
+
+![](reports/figures/future.png)
+
+But what will be results? We don't know
 
 ## Used tools
 
