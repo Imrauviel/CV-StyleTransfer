@@ -5,7 +5,7 @@ from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import FileResponse, StreamingResponse
 
 import uvicorn
-import align_images
+from align_images import align_images
 from project_images import project_images
 import numpy as np
 from pathlib import Path
@@ -21,6 +21,7 @@ app = FastAPI()
 async def get_result_image(model_url: str, style_url: str, image: UploadFile = File(...)):
     original_image = Image.open(image.file)
     original_image.save('./raw/test.jpg')
+    align_images('raw', 'aligned')
     project_images('aligned', 'generated', num_steps=500, network_pkl=model_url)
     _, _, Gs = pretrained_networks.load_networks(style_url)
 
@@ -36,6 +37,7 @@ async def get_result_image(model_url: str, style_url: str, image: UploadFile = F
         Image.fromarray(images.transpose((0, 2, 3, 1))[0], 'RGB').save(latent_file.parent / (f"example.jpg"))
         result = Image.open("generated/example.jpg")
         return StreamingResponse(io.BytesIO(result.tobytes()), media_type="image/png")
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)
