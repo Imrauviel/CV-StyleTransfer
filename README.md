@@ -14,11 +14,11 @@ Traditional methods rely on manipulating image in such a way that
 the sum of losses(differences) between: (target image, original image) and (target image, style image) was the lowest. To do this most often pretrained VGG19 (Neural Network model) is used, along with mathematical tools like Gram matrix.
 
 <p float="left">
-  <img src="https://drive.google.com/uc?export=download&id=1MT_UeiDna57hj5Hq4_4n6voOswjaduAg" width="160" />
+  <img src="reports/figures/tom1.jpg" width="160" />
   <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-512.png" width="160" />
-  <img src="https://drive.google.com/uc?export=download&id=1LET5bPP95ZZ3dxY1A2Ud1b8fnK_SAYhz" width="160" /> 
+  <img src="reports/figures/tom2.jpg" width="160" /> 
   <img src="https://pngimg.com/uploads/equals/equals_PNG35.png" width="160" /> 
-  <img src="https://drive.google.com/uc?export=download&id=1GEMPlpS2XXAjLhmR1CIMz9wkr2y7RTMO" width="160" /> 
+  <img src="reports/figures/tom3.jpg" width="160" /> 
 </p>
 
 # Style Transfer 2.0
@@ -67,6 +67,12 @@ Why bother? Beacuse if image does not reminds face, our method is useless.
 # Examples of Style Transfers 2.0
 
 <p float="left">
+  <img src="reports/figures/karolak.png" alt="drawing" width="256"/>  
+  <img src="reports/figures/karolak_art.jfif" alt="drawing" width="256"/>
+  <img src="reports/figures/karolak_earth.jfif" alt="drawing" width="256"/>
+</p>
+
+<p float="left">
   <img src="reports/figures/quantin.png" alt="drawing" width="256"/>
   <img src="reports/figures/example20.jpg" alt="drawing" width="256"/>
   <img src="reports/figures/example10.jpg" alt="drawing" width="256"/>
@@ -84,7 +90,25 @@ Why bother? Beacuse if image does not reminds face, our method is useless.
   <img src="reports/figures/example42.jpg" alt="drawing" width="256"/>
 </p>
 
+
+
 # Examples of 'normal' Style Transfers
+
+<p float="left">
+  <img src="reports/figures/musk.png" width="160" />
+  <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-512.png" width="160" />
+  <img src="reports/figures/earth.jpg" width="160" /> 
+  <img src="https://pngimg.com/uploads/equals/equals_PNG35.png" width="160" /> 
+  <img src="reports/figures/muskeee.jpg" width="160" /> 
+</p>
+
+<p float="left">
+  <img src="reports/figures/babeczka.png" width="160" />
+  <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-512.png" width="160" />
+  <img src="reports/figures/vaina.jpg" width="160" /> 
+  <img src="https://pngimg.com/uploads/equals/equals_PNG35.png" width="160" /> 
+  <img src="reports/figures/koko.jpg" width="160" /> 
+</p>
 
 # Future work
 
@@ -96,37 +120,35 @@ But what will be results? We don't know
 
 ## Used tools
 
-- MlFlow
-- Tensorboard
-- Docker
+- MlFlow(only for saving parameters for runs)
+- Tensorboard (only to generete graph):
 
+![](reports/figures/tensorboard.png)
+
+- RestAPI:
+
+![](reports/figures/rest.png)
 
 ## Links
 
 https://github.com/justinpinkney/awesome-pretrained-stylegan2
 
+https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123670171.pdf
+
+https://medium.com/swlh/hairstyle-transfer-semantic-editing-gan-latent-code-b3a6ccf91e82
+
+
 https://towardsdatascience.com/style-transfer-with-gans-on-hd-images-88e8efcf3716
 
 https://github.com/maciej3031/comixify
 
-https://www.kaggle.com/momincks/paintings-for-artistic-style-transfer?select=Edvard+Munch+-+The+Scream.jpg
-
 https://github.com/akanimax/msg-stylegan-tf
 
-<!-- https://github.com/justinpinkney/toonify/blob/master/toonify-yourself.ipynb -->
+https://github.com/justinpinkney/toonify/blob/master/toonify-yourself.ipynb -->
 
 https://github.com/matthias-wright/flaxmodels
 
 https://github.com/matthias-wright/flaxmodels/blob/main/flaxmodels/stylegan2/stylegan2_demo.ipynb
 
-<!-- https://github.com/justinpinkney/toonify/blob/master/StyleGAN-blending-example.ipynb -->
-
-https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123670171.pdf
-
 https://openaccess.thecvf.com/content_ICCV_2019/papers/Abdal_Image2StyleGAN_How_to_Embed_Images_Into_the_StyleGAN_Latent_Space_ICCV_2019_paper.pdf
-
-https://medium.com/swlh/hairstyle-transfer-semantic-editing-gan-latent-code-b3a6ccf91e82
-
-https://github.com/woctezuma/stylegan2-projecting-images
-
 
