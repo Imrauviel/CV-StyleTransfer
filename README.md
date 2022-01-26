@@ -110,13 +110,28 @@ Why bother? Beacuse if image does not reminds face, our method is useless.
   <img src="reports/figures/koko.jpg" width="160" /> 
 </p>
 
+# Summary
+
 # Future work
 
 Technily speaking it was posibilty makes interlace or join 3 models:
 
 ![](reports/figures/future.png)
 
+Also, what if we reverse the process: we put art image; can we expected that we get "normal" picture? In this way, can we make dearting?
+
 But what will be results? We don't know
+
+# Summary
+
+Most of our code is from orginal StyleGAN2 [repo](https://github.com/NVlabs/stylegan2).
+
+We choose StyleGAN2, becuse across all (StyleGAN1, StyleGAN2, StyleGAN3), have the most pretrained models.
+
+We don't have any dataset or metrics, because we do not train any model. Number of parameters of this model dependence from subtype (config) of him, but it is atleast over 30 mln.
+Pickle file for each model weight over 300 MB. 
+
+Only hyperparameter thet we use, it is layer after which we make switch, and we choose the one with most satysfing results.
 
 ## Used tools
 
@@ -129,9 +144,18 @@ But what will be results? We don't know
 
 ![](reports/figures/rest.png)
 
+- Docker(it should work, but for some reasone it doesn't):
+
+![](reports/figures/docker1.png)
+
+![](reports/figures/docker2.png)
+
+
 ## Links
 
 https://github.com/justinpinkney/awesome-pretrained-stylegan2
+
+https://github.com/justinpinkney/stylegan2
 
 https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123670171.pdf
 
