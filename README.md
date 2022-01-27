@@ -21,7 +21,7 @@ the sum of losses(differences) between: (target image, original image) and (targ
   <img src="reports/figures/tom3.jpg" width="160" /> 
 </p>
 
-# Style Transfer 2.0
+# Style Transfer via StyleGAN2
 
 StyleGAN is a type of GAN. Article titled "A Style-Based Generator Architecture for Generative Adversarial Networks" was published by Nvidia in 2018. 
 
