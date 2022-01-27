@@ -50,7 +50,7 @@ But can we change our species? First, we have to create one.
 
 How is this process going? First we need to have two models that have the same config and same resolution. We copy weights from the first one, and after some chosen upscaling layer, we copy values from another.
 
-![](https://drive.google.com/uc?export=download&id=1uq-bC9rN62l48tBUrlwdvP7M0O2h-N0O)
+![](reports/figures/layers.png)
 
 Why bother? Beacuse if image does not reminds face, our method is useless.
 
@@ -110,8 +110,6 @@ Why bother? Beacuse if image does not reminds face, our method is useless.
   <img src="reports/figures/koko.jpg" width="160" /> 
 </p>
 
-# Summary
-
 # Future work
 
 Technily speaking it was posibilty makes interlace or join 3 models:
@@ -124,7 +122,9 @@ But what will be results? We don't know
 
 # Summary
 
-Most of our code is from orginal StyleGAN2 [repo](https://github.com/NVlabs/stylegan2).
+Most of our code is from this StyleGAN2 [repo](https://github.com/justinpinkney/stylegan2).
+
+Our work is presented in Google Colabs presented at the begginig. 
 
 We choose StyleGAN2, becuse across all (StyleGAN1, StyleGAN2, StyleGAN3), have the most pretrained models.
 
@@ -132,6 +132,11 @@ We don't have any dataset or metrics, because we do not train any model. Number 
 Pickle file for each model weight over 300 MB. 
 
 Only hyperparameter thet we use, it is layer after which we make switch, and we choose the one with most satysfing results.
+
+## Models
+
+We used StyleGAN2 and all models in this project are some variant of this models.
+In total we used something like 5 diffrent pretrain gans, and we created countless models due to blending models, however only few of them are what's so over visualy satysfing. In notebooks we give links to 6 of them. 
 
 ## Used tools
 
